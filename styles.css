@@ -27,6 +27,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0px 3cqmax #0000006c;
+
 }
 
 #head{
@@ -43,6 +45,7 @@
         height: 120px;
         width: 300px;
         background: #000;
+        box-shadow: 0 0 10px #00000067;
     }
     
     .avtCard{
@@ -92,6 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .contact{
         margin-top: 25px;
         margin-bottom: 25px;
@@ -128,6 +132,19 @@
         height: 80%;
     }
 
+    .picPost::before{
+        content: 'Daily Status';
+        position: absolute;
+        color: #E8EFCF;
+        background: #7AA2E3;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 3% 5%;
+        box-shadow: 0 0px 10px #0000006c;
+    }
+
     .picPost img{
         object-fit: cover;
         width: 100%;
@@ -143,6 +160,7 @@
         width: 100%;
         height: 20%;
         bottom: 0;
+        box-shadow: 0 -10px 30px #00000067;
     }
 
     .rect{
@@ -159,6 +177,55 @@
 }
 
 #footer{
+    padding-top: 6px;
+    border-radius: 10px;
     height: 50px;
-    background: #F8F6E3;
+    background: #39a6ffc9;
+    box-shadow: 0 20px 50px #00000067;
+
+    ul{
+        height: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tab{
+        position: relative;
+        background-color: #6AD4DD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        color: #1d1678c9;
+        transition: all 0.3s ease;
+    }
+
+    .tab p{
+        position: absolute;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        font-size: 0;
+        background: #7AA2E3;
+        padding: 3px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .tab:hover p{
+        transform: translateY(-30px);
+        font-size: 15px;
+        opacity: 1;
+    }
+
+    .tab:hover{
+        background: #F7DED0;
+    }
 }
