@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Profie - KimiZK</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/gjWYQGt/QARN7st-png-403.png"/>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./tabBanking.css">
     <script src="./script.js" defer></script>
+
+    <meta name="description" content="Thẻ thông tin người dùng của KimiZK :3">
+    <meta name="author" content="Nguyễn Huy Hoàng">
+    <meta http-equiv="refresh" content="300">
+    <meta property="og:title" content="Thẻ thông tin người dùng của KimiZK :3">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
@@ -55,36 +62,105 @@
                 </div>
 
                 <div class="post">
-                    <div class="picPost">
-                        <img src="" alt="">
-                    </div>
-
-                    <div class="action">
-                        <div class="content">
-                            <p class="title"></p>
-                            <p class="des"></p>
+                    <div id="selector-1" class="box">
+                        <div class="picPost">
+                            <img src="">
                         </div>
-                        <div class="rect">
-                            <i class="fa-solid fa-heart fa-beat"></i>
-                            <p class="count-rect">999</p>
+    
+                        <div class="action">
+                            <div class="content">
+                                <p class="title"></p>
+                                <p class="des"></p>
+                            </div>
+                            <div class="rect">
+                                <i class="fa-solid fa-heart fa-beat"></i>
+                                <p class="count-rect">999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="selector-2" class="box">
+                        <div class="bank">
+                            <div class="icon-banking">
+                                <img src="https://i.ibb.co/hc3BcvJ/snapedit-1714186245478.png">
+                            </div>
+                            <div class="info-account">
+                                <p class="nameBanking">MB Bank</p>
+                                <p class="stk">77030420088888</p>
+                            </div>
+                            <div class="btn-bank">
+                                <i class="fa-duotone fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="bank">
+                            <div class="icon-banking">
+                                <img src="https://i.ibb.co/N9k4dTW/com-vnpay-Agribank3g-icon-2024-01-21-11-46-01.png">
+                            </div>
+                            <div class="info-account">
+                                <p class="nameBanking">Agribank</p>
+                                <p class="stk">1300304200888</p>
+                            </div>
+                            <div class="btn-bank">
+                                <i class="fa-duotone fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="bank">
+                            <div class="icon-banking">
+                                <img src="https://i.ibb.co/9vyLt0h/image-13-200x200-1.png">
+                            </div>
+                            <div class="info-account">
+                                <p class="nameBanking">Techcombank</p>
+                                <p class="stk">19030304200888</p>
+                            </div>
+                            <div class="btn-bank">
+                                <i class="fa-duotone fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="bank">
+                            <div class="icon-banking">
+                                <img src="https://i.ibb.co/J7dQf1z/bo-nhan-dien-thuong-hieu-vietinbank-7.png">
+                            </div>
+                            <div class="info-account">
+                                <p class="nameBanking">VietinBank</p>
+                                <p class="stk">710304200888</p>
+                            </div>
+                            <div class="btn-bank">
+                                <i class="fa-duotone fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="selector-3" class="box">
+                        <div class="picPost">
+                            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/07/tumblr_nmvrs6ubl71qze3hdo1_r1_500.gif">
+                        </div>
+    
+                        <div class="action">
+                            <div class="content">
+                                <p class="title">Tiêu đề: Ok 2</p>
+                                <p class="des">Mô tả: Ok 2</p>
+                            </div>
+                            <div class="rect">
+                                <i class="fa-solid fa-heart fa-beat"></i>
+                                <p class="count-rect">999</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 
             </div>
 
             <div id="footer">
                 <ul>
                     <li class="tab home">
-                        <i class="fa-duotone fa-house-heart"></i>
+                        <i id="btn-1" class="fa-duotone fa-house-heart" onclick="home()"></i>
                         <p>Home</p>
                     </li>
                     <li class="tab banking">
-                        <i class="fa-duotone fa-building-columns"></i>
+                        <i id="btn-2" class="fa-duotone fa-building-columns" onclick="banking()"></i>
                         <p>Banking</p>
                     </li>
                     <li class="tab others">
-                        <i class="fa-duotone fa-ellipsis"></i>
+                        <i id="btn-3" class="fa-duotone fa-ellipsis" onclick="others()"></i>
                         <p>Others</p>
                     </li>
                     <!-- <li class="b">
@@ -95,6 +171,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
